@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EQUALITYLAB by Ana · Consultoría y formación en igualdad de género</title>
+<meta name="description" content="Consultoría de igualdad de género y talleres de prevención de la violencia de género para empresas, centros educativos y ciudadanía. Directorio de formación en Asturias.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234b1d8f'/%3E%3Cpath d='M6 32Q32 8 58 32Q32 56 6 32Z' fill='none' stroke='%23c4b5fd' stroke-width='4'/%3E%3Crect x='24' y='26' width='16' height='4' fill='%23fff'/%3E%3Crect x='24' y='34' width='16' height='4' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1e1033;--deep:#3b1578;--violet:#6d28d9;--vivid:#8b5cf6;--lilac:#c4b5fd;--mist:#f4efff;--soft:#ebe3ff;--line:#ddd2fb;--white:#fff;--muted:#5b4d78;
+--serif:"Fraunces",Georgia,serif;--sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font:400 1.0625rem/1.65 var(--sans);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}a{color:var(--violet)}
+:focus-visible{outline:3px solid var(--vivid);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);line-height:1.12;margin:0;font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);color:var(--deep)}h3{font-size:1.3rem;color:var(--deep)}
+p{margin:0 0 1rem}.lead{font-size:1.2rem;color:var(--muted);max-width:60ch}
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+.btn{display:inline-block;padding:.85rem 1.5rem;border-radius:999px;background:var(--violet);color:#fff;font-weight:600;text-decoration:none;border:2px solid var(--violet);cursor:pointer;font:600 1rem var(--sans);transition:background .2s}
+.btn:hover{background:var(--deep);border-color:var(--deep)}
+.btn.ghost{background:transparent;color:var(--deep);border-color:var(--lilac)}.btn.ghost:hover{background:var(--soft)}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--deep)}
+.brand b{font:700 1.2rem var(--serif);letter-spacing:.02em}.brand small{font:500 .85rem var(--sans);color:var(--muted)}
+nav ul{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--ink);font-weight:500}nav a:hover{color:var(--violet)}
+.burger{display:none;background:none;border:0;padding:.5rem;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--deep);margin:5px 0;transition:.2s}
+@media(max-width:820px){.burger{display:block}
+nav ul{position:absolute;inset:68px 0 auto 0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line);display:none;padding:.5rem 1.25rem 1rem}
+nav ul.open{display:flex}nav li a{display:block;padding:.8rem 0;border-bottom:1px solid var(--soft)}}
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% 10%,var(--soft),transparent 70%),linear-gradient(180deg,var(--mist),#fff);padding-top:clamp(3rem,7vw,5.5rem)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.6vw,4.1rem);color:var(--deep);margin-bottom:1.3rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.eye{width:100%;max-width:430px;justify-self:center}
+.eye .iris{transform-origin:200px 150px;animation:look 7s ease-in-out 1 both}
+@keyframes look{0%{transform:scale(.6)}40%{transform:scale(1.04)}100%{transform:scale(1)}}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.eye{max-width:280px;order:-1}}
+/* services */
+.grid{display:grid;gap:1.25rem;margin-top:2.2rem}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--mist);border:1px solid var(--line);border-radius:18px;padding:1.6rem}
+.card h3{margin-bottom:.6rem}.card p{color:var(--muted);margin:0}
+.card.dark{background:var(--deep);border-color:var(--deep)}.card.dark h3{color:#fff}.card.dark p{color:var(--lilac)}
+.band{background:var(--ink);color:#fff}.band h2{color:#fff}.band .lead{color:var(--lilac)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.steps li{counter-increment:s;padding:1.2rem 1.2rem 1.2rem 3.6rem;position:relative;border:1px solid #4a3270;border-radius:14px;color:var(--lilac)}
+.steps li::before{content:counter(s);position:absolute;left:1.1rem;top:1.1rem;width:1.8rem;height:1.8rem;border-radius:50%;background:var(--vivid);color:#fff;font:700 .95rem/1.8rem var(--sans);text-align:center}
+.steps b{display:block;color:#fff}
+/* directory */
+.filters{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:.8rem;margin:2rem 0 1rem}
+.filters input,.filters select{width:100%;padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:12px;font:inherit;background:#fff;color:var(--ink)}
+.filters input:focus,.filters select:focus{border-color:var(--vivid);outline:none;box-shadow:0 0 0 3px var(--soft)}
+@media(max-width:820px){.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}}
+.count{color:var(--muted);font-size:.95rem;margin-bottom:1rem}
+.course{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.4rem}
+.course.own{border:2px solid var(--vivid);background:var(--mist)}
+.course h3{font-size:1.15rem;margin:.6rem 0 .3rem}.course .who{color:var(--muted);font-size:.95rem;margin-bottom:.6rem}
+.course p{font-size:.98rem;flex:1}.course a{font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.tag{font-size:.78rem;font-weight:600;padding:.2rem .65rem;border-radius:999px;background:var(--soft);color:var(--deep)}
+.tag.m{background:var(--deep);color:#fff}.tag.a{background:var(--lilac);color:var(--ink)}
+.note{margin-top:1.5rem;padding:1rem 1.2rem;border-left:4px solid var(--vivid);background:var(--mist);border-radius:0 12px 12px 0;color:var(--muted);font-size:.95rem}
+.empty{display:none;padding:2rem;text-align:center;color:var(--muted)}
+/* resources */
+.res{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:2rem}
+.res section{padding:0}.res div{border:1px solid var(--line);border-radius:16px;padding:1.4rem}
+.res h3{font-size:1.1rem;margin-bottom:.7rem}.res ul{margin:0;padding:0;list-style:none}
+.res li{padding:.55rem 0;border-top:1px solid var(--soft)}.res li:first-child{border:0}.res li span{display:block;font-size:.88rem;color:var(--muted)}
+/* about/contact */
+.about{background:var(--mist)}.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+@media(max-width:820px){.about .wrap{grid-template-columns:1fr}}
+form{display:grid;gap:.9rem}label{font-weight:600;font-size:.95rem;display:grid;gap:.35rem}
+form input,form select,form textarea{padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:12px;font:inherit;background:#fff}
+form textarea{min-height:120px;resize:vertical}
+.help{background:var(--deep);color:#fff;border-radius:16px;padding:1.2rem 1.4rem;margin-top:1.5rem}.help a{color:var(--lilac)}
+footer{background:var(--ink);color:var(--lilac);padding:2.5rem 0;font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}footer a{color:var(--lilac)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="brand" href="#inicio" aria-label="EQUALITYLAB by Ana, inicio">
+<svg width="40" height="28" viewBox="0 0 80 56" aria-hidden="true"><path d="M4 28Q40 -4 76 28Q40 60 4 28Z" fill="none" stroke="#6d28d9" stroke-width="5"/><circle cx="40" cy="28" r="11" fill="#6d28d9"/><rect x="34" y="23" width="12" height="3" fill="#fff"/><rect x="34" y="30" width="12" height="3" fill="#fff"/></svg>
+<span><b>EQUALITYLAB</b> <small>by Ana</small></span></a>
+<button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+<nav><ul id="menu"><li><a href="#servicios">Servicios</a></li><li><a href="#formacion">Formación en Asturias</a></li><li><a href="#recursos">Recursos</a></li><li><a href="#ana">Sobre Ana</a></li><li><a href="#contacto">Contacto</a></li></ul></nav>
+</div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="wrap">
+<div>
+<h1>Igualdad real en tu empresa, tu centro y tu comunidad</h1>
+<p class="lead">Consultoría y talleres para diseñar planes de igualdad, prevenir la violencia de género y construir entornos donde todas las personas puedan desarrollarse con seguridad.</p>
+<div class="cta"><a class="btn" href="#contacto">Solicitar una propuesta</a><a class="btn ghost" href="#formacion">Explorar formación en Asturias</a></div>
+</div>
+<svg class="eye" viewBox="0 0 400 300" role="img" aria-label="Ojo violeta cuya pupila es un signo igual">
+<path d="M20 150Q200 -30 380 150Q200 330 20 150Z" fill="#f4efff" stroke="#6d28d9" stroke-width="8"/>
+<g class="iris"><circle cx="200" cy="150" r="84" fill="#8b5cf6"/><circle cx="200" cy="150" r="62" fill="#6d28d9"/><circle cx="200" cy="150" r="42" fill="#3b1578"/>
+<rect x="170" y="133" width="60" height="12" rx="3" fill="#fff"/><rect x="170" y="156" width="60" height="12" rx="3" fill="#fff"/></g>
+<path d="M60 150Q200 20 340 150" fill="none" stroke="#c4b5fd" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+</svg>
+</div></section>
+
+<section id="servicios"><div class="wrap">
+<h2>Consultoría y talleres</h2>
+<p class="lead">Trabajamos con una mirada aplicada: diagnóstico, plan y formación que se pueden implantar el lunes.</p>
+<div class="grid g3">
+<article class="card"><h3>Ámbito laboral</h3><p>Diagnóstico y planes de igualdad, protocolos contra el acoso sexual y por razón de sexo, formación a plantillas y a mandos, y revisión de procesos de selección y promoción.</p></article>
+<article class="card"><h3>Ámbito escolar</h3><p>Talleres para alumnado de 11 a 18 años sobre relaciones sanas, estereotipos, pantallas y bienestar emocional; sesiones para familias y formación para el profesorado.</p></article>
+<article class="card"><h3>Ciudadanía</h3><p>Charlas, cursos y círculos de conversación abiertos a asociaciones, ayuntamientos y personas interesadas, presenciales u online, sobre igualdad, cuidados y violencia de género.</p></article>
+</div>
+<div class="grid g3" style="margin-top:1.25rem">
+<article class="card dark"><h3>Prevención de la violencia de género</h3><p>Detección, respuesta y acompañamiento, con enfoque en las violencias digitales y en la violencia sexual.</p></article>
+<article class="card dark"><h3>Cuidados y corresponsabilidad</h3><p>Reparto del trabajo de cuidados, conciliación y medidas organizativas que funcionan.</p></article>
+<article class="card dark"><h3>Salud mental y pantallas</h3><p>Uso saludable de pantallas, autoimagen, ciberacoso y herramientas de autocuidado para adolescentes.</p></article>
+</div>
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2>Cómo trabajamos</h2>
+<p class="lead">Un proceso en cuatro fases, adaptado al tamaño y al contexto de cada organización.</p>
+<ol class="steps">
+<li><b>Escucha</b>Primera reunión para entender necesidades y objetivos.</li>
+<li><b>Diagnóstico</b>Datos y entrevistas para identificar brechas y riesgos.</li>
+<li><b>Intervención</b>Plan, protocolo o taller con materiales a medida.</li>
+<li><b>Seguimiento</b>Indicadores y evaluación para sostener el cambio.</li>
+</ol>
+</div></section>
+
+<section id="formacion"><div class="wrap">
+<h2>Formación en Asturias</h2>
+<p class="lead">Cursos, talleres y programas sobre igualdad, prevención de la violencia de género, cuidados, salud mental y pantallas, para adolescentes de 11 a 18 años y para todas las edades.</p>
+<div class="filters">
+<input id="q" type="search" placeholder="Buscar por palabra clave" aria-label="Buscar">
+<select id="ft" aria-label="Temática"><option value="">Todas las temáticas</option><option>Igualdad</option><option>Violencia de género</option><option>Cuidados</option><option>Salud mental</option><option>Pantallas</option></select>
+<select id="fa" aria-label="Edad"><option value="">Todas las edades</option><option>11-18 años</option><option>Adultos y profesorado</option><option>Familias</option></select>
+<select id="fm" aria-label="Modalidad"><option value="">Presencial y online</option><option>Presencial</option><option>Online</option></select>
+</div>
+<div class="count" id="count" role="status" aria-live="polite"></div>
+<div class="grid g3" id="list" style="margin-top:0"></div>
+<p class="empty" id="empty">No hay resultados con esos filtros. Prueba a quitar alguno.</p>
+<p class="note">Directorio orientativo. Las convocatorias, fechas y plazas cambian cada curso: confirma siempre los datos en la web de cada entidad. ¿Conoces una oferta que falte? Escríbenos desde el formulario de contacto.</p>
+</div></section>
+
+<section id="recursos" style="background:var(--mist)"><div class="wrap">
+<h2>Recursos didácticos</h2>
+<p class="lead">Materiales abiertos para trabajar la igualdad en el aula, en casa y en la organización.</p>
+<div class="res">
+<div><h3>Coeducación en el aula</h3><ul>
+<li><a href="https://iam.asturias.es/documents/269132/3354977/COEDUCASTUR_INFANTIL_DEFINITIVO.pdf/d07a9a2f-f7dd-9d4f-03c7-1d703af91b0c" target="_blank" rel="noopener">Coeducastur en Infantil</a><span>Instituto Asturiano de la Mujer</span></li>
+<li><a href="https://iam.asturias.es/documents/269132/0/DL-Coeducastur+ESO_Comunicacio%CC%81n+Lingu%CC%88i%CC%81stica_revisado+Espora.pdf/033fb2f8-fcd0-ecb0-2898-c40de3bdc254" target="_blank" rel="noopener">Coeducastur para Secundaria</a><span>Cuaderno del profesorado, Comunicación Lingüística</span></li>
+<li><a href="https://iam.asturias.es/documents/269132/0/Gui%CC%81a+para+el+profesorado_Coeducastur+en+Educacio%CC%81n+Especial.pdf/3721744b-4be0-57dd-66f4-b1267f6ab7c7" target="_blank" rel="noopener">Coeducastur en Educación Especial</a><span>Guía para el profesorado</span></li>
+<li><a href="https://iam.asturias.es/documents/269132/3354977/Propuestasdidcticas25N_2025.pdf/6581a137-cd0e-aaee-6deb-fe3c2e63f675" target="_blank" rel="noopener">Propuestas didácticas 25N</a><span>Actividades para el Día contra la violencia hacia las mujeres</span></li></ul></div>
+<div><h3>Violencia de género</h3><ul>
+<li><a href="https://violenciagenero.igualdad.gob.es" target="_blank" rel="noopener">Delegación del Gobierno contra la Violencia de Género</a><span>Información, recursos y estadísticas oficiales</span></li>
+<li><a href="https://www.educarenigualdad.org" target="_blank" rel="noopener">Educar en Igualdad</a><span>Recursos educativos de la Fundación Mujeres</span></li>
+<li><a href="https://iam.asturias.es" target="_blank" rel="noopener">Instituto Asturiano de la Mujer</a><span>Centro de documentación y servicios en Asturias</span></li></ul></div>
+<div><h3>Pantallas y bienestar digital</h3><ul>
+<li><a href="https://www.is4k.es" target="_blank" rel="noopener">Internet Segura for Kids</a><span>INCIBE: guías para familias, docentes y menores</span></li>
+<li><a href="https://www.pantallasamigas.net" target="_blank" rel="noopener">PantallasAmigas</a><span>Ciudadanía digital, ciberacoso y sexting</span></li>
+<li><a href="https://consaludmental.org" target="_blank" rel="noopener">Confederación Salud Mental España</a><span>Información y materiales de salud mental</span></li></ul></div>
+</div></div></section>
+
+<section class="about" id="ana"><div class="wrap">
+<div><h2>Sobre Ana</h2><p style="margin-top:1.2rem">Escribe aquí una presentación breve de Ana: formación, años de experiencia, sectores en los que ha trabajado y el enfoque que la diferencia. Dos o tres párrafos bastan.</p>
+<p>EQUALITYLAB nace para que la igualdad deje de ser un documento archivado y pase a ser una práctica cotidiana, medible y compartida.</p></div>
+<div id="contacto"><h2>Contacto</h2>
+<form id="cf" style="margin-top:1.2rem">
+<label>Nombre<input name="n" required autocomplete="name"></label>
+<label>Correo electrónico<input name="e" type="email" required autocomplete="email"></label>
+<label>Tipo de consulta<select name="t"><option>Ámbito laboral</option><option>Ámbito escolar</option><option>Ciudadanía y asociaciones</option><option>Otra consulta</option></select></label>
+<label>Mensaje<textarea name="m" required></textarea></label>
+<button class="btn" type="submit">Enviar mensaje</button>
+</form>
+<div class="help"><b>¿Estás viviendo violencia de género?</b> Llama al <a href="tel:016"><b>016</b></a> (gratuito, 24 horas, no deja rastro en la factura) o al 112 en caso de emergencia.</div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="y"></span> EQUALITYLAB by Ana</span><span><a href="#inicio">Volver arriba</a></span></div></footer>
+
+<script>
+const CONTACT_EMAIL="hola@equalitylab.es"; // cambia por el correo real de Ana
+const C=[
+{own:1,t:"Taller: relaciones sanas y violencia de género",o:"EQUALITYLAB by Ana",d:"Sesiones para alumnado de 11 a 18 años sobre amor romántico, control, consentimiento y violencias digitales.",th:["Violencia de género","Igualdad"],a:["11-18 años"],m:"Presencial",u:"#contacto",l:"Solicitar"},
+{own:1,t:"Formación en igualdad y protocolo de acoso",o:"EQUALITYLAB by Ana",d:"Formación para plantillas y mandos intermedios, con casos prácticos y puesta en marcha del protocolo.",th:["Igualdad","Violencia de género"],a:["Adultos y profesorado"],m:"Presencial",u:"#contacto",l:"Solicitar"},
+{own:1,t:"Pantallas, autoimagen y bienestar emocional",o:"EQUALITYLAB by Ana",d:"Taller para adolescentes y sesión para familias sobre uso saludable de redes y prevención del ciberacoso.",th:["Pantallas","Salud mental"],a:["11-18 años","Familias"],m:"Online",u:"#contacto",l:"Solicitar"},
+{t:"Coeducastur",o:"Instituto Asturiano de la Mujer y Consejería de Educación",d:"Programa de coeducación con propuestas didácticas para Infantil, Primaria, Secundaria, FP y Educación Especial.",th:["Igualdad","Violencia de género"],a:["11-18 años","Adultos y profesorado"],m:"Presencial",u:"https://iam.asturias.es",l:"Ver programa"},
+{t:"Teatro foro contra la violencia de género",o:"Instituto Asturiano de la Mujer, institutos de Secundaria",d:"Actividad de sensibilización con teatro foro en los IES del territorio asturiano. Se solicita a través del centro educativo.",th:["Violencia de género"],a:["11-18 años"],m:"Presencial",u:"https://iam.asturias.es",l:"Consultar"},
+{t:"Formación del profesorado en coeducación",o:"Centros del Profesorado y de Recursos (CPR) y Educastur",d:"Cursos y seminarios de igualdad y prevención de la violencia de género para docentes, dentro del plan de formación.",th:["Igualdad","Violencia de género"],a:["Adultos y profesorado"],m:"Presencial",u:"https://www.educastur.es",l:"Ver oferta"},
+{t:"Formación en coeducación y feminismo",o:"Instituto Asturiano de la Mujer",d:"Contenidos sobre diagnóstico del sexismo en el centro, legislación, historia del feminismo y violencia sexual. Consulta la próxima edición.",th:["Igualdad","Violencia de género"],a:["Adultos y profesorado"],m:"Presencial",u:"https://iam.asturias.es/documents/269132/3354977/ESFOCO+GR%C3%81FICA+FINAL+INFO+2026+verano.pdf/00c38cae-3854-fd60-99c6-0bbeffc04037",l:"Ver información"},
+{t:"Formación en igualdad para el empleo público",o:"Instituto Asturiano de Administración Pública Adolfo Posada",d:"Formación en igualdad y prevención de la violencia de género para el personal de la Administración del Principado.",th:["Igualdad","Violencia de género"],a:["Adultos y profesorado"],m:"Presencial",u:"https://www.asturias.es",l:"Consultar"},
+{t:"Jugamos por la Igualdad",o:"Dirección General de Deportes del Principado",d:"Talleres y jornadas en el deporte contra las agresiones sexuales y por la igualdad, para clubes, federaciones y deportistas.",th:["Igualdad","Violencia de género"],a:["11-18 años","Adultos y profesorado"],m:"Presencial",u:"https://www.asturias.es",l:"Consultar"},
+{t:"Máster en Estudios de Género",o:"Universidad de Oviedo",d:"Posgrado universitario que aborda igualdad y violencia machista. Para quien busca formación especializada.",th:["Igualdad","Violencia de género"],a:["Adultos y profesorado"],m:"Presencial",u:"https://www.uniovi.es",l:"Ver estudios"},
+{t:"Uso seguro y saludable de internet",o:"INCIBE, Internet Segura for Kids",d:"Guías, cursos y materiales gratuitos para menores, familias y docentes sobre ciberacoso, privacidad y tiempo de pantalla.",th:["Pantallas","Salud mental"],a:["11-18 años","Familias","Adultos y profesorado"],m:"Online",u:"https://www.is4k.es",l:"Ir al recurso"},
+{t:"Talleres y recursos sobre ciudadanía digital",o:"PantallasAmigas",d:"Materiales de prevención de ciberacoso, sexting y violencia digital en la adolescencia.",th:["Pantallas","Violencia de género"],a:["11-18 años","Familias"],m:"Online",u:"https://www.pantallasamigas.net",l:"Ir al recurso"},
+{t:"Programas de salud en la escuela",o:"Consejería de Salud del Principado",d:"Acciones de salud pública y promoción de la salud en centros educativos, incluido el bienestar emocional.",th:["Salud mental"],a:["11-18 años"],m:"Presencial",u:"https://www.saludasturias.com",l:"Consultar"},
+{t:"Información y apoyo en salud mental",o:"Confederación Salud Mental España",d:"Materiales, guías y red de entidades de apoyo en salud mental para personas, familias y profesionales.",th:["Salud mental","Cuidados"],a:["Familias","Adultos y profesorado"],m:"Online",u:"https://consaludmental.org",l:"Ir al recurso"},
+{t:"Formación en cuidados y atención a personas",o:"Cruz Roja Asturias",d:"Cursos de cuidados y atención a personas dependientes, con enfoque en la corresponsabilidad. Consulta la oferta de tu zona.",th:["Cuidados"],a:["Adultos y profesorado","Familias"],m:"Presencial",u:"https://www.cruzroja.es",l:"Consultar"}
+];
+const $=s=>document.querySelector(s),list=$("#list");
+function render(){
+ const q=$("#q").value.trim().toLowerCase(),ft=$("#ft").value,fa=$("#fa").value,fm=$("#fm").value;
+ const r=C.filter(c=>(!ft||c.th.includes(ft))&&(!fa||c.a.includes(fa))&&(!fm||c.m===fm)&&(!q||(c.t+c.o+c.d).toLowerCase().includes(q)));
+ list.innerHTML=r.map(c=>`<article class="course${c.own?" own":""}"><div class="tags">${c.th.map(x=>`<span class="tag">${x}</span>`).join("")}<span class="tag m">${c.m}</span></div><h3>${c.t}</h3><div class="who">${c.o}</div><p>${c.d}</p><div class="tags" style="margin-bottom:.8rem">${c.a.map(x=>`<span class="tag a">${x}</span>`).join("")}</div><a href="${c.u}"${c.u[0]=="#"?"":' target="_blank" rel="noopener"'}>${c.l}</a></article>`).join("");
+ $("#count").textContent=r.length+(r.length==1?" resultado":" resultados");
+ $("#empty").style.display=r.length?"none":"block";
+}
+["#q","#ft","#fa","#fm"].forEach(s=>$(s).addEventListener("input",render));render();
+const b=$(".burger"),m=$("#menu");
+b.onclick=()=>{const o=m.classList.toggle("open");b.setAttribute("aria-expanded",o)};
+m.addEventListener("click",e=>{if(e.target.tagName=="A"){m.classList.remove("open");b.setAttribute("aria-expanded",false)}});
+$("#cf").addEventListener("submit",e=>{e.preventDefault();const f=new FormData(e.target);
+ location.href="mailto:"+CONTACT_EMAIL+"?subject="+encodeURIComponent("Consulta web: "+f.get("t"))+"&body="+encodeURIComponent(f.get("m")+"\n\n"+f.get("n")+" ("+f.get("e")+")")});
+$("#y").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
